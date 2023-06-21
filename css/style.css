@@ -10,6 +10,7 @@ body{
     font-family: 'Fira Sans', serif;
     font-weight: 400;
     font-size: 16px;
+    line-height: 150%;
     color: #EFE7E2;
 }
 
@@ -66,10 +67,11 @@ a .header__logo{
 a .logo__text{
     font-family: 'Fira Sans', serif;
     font-weight: 700;
-    line-height: 150%;
     text-transform: uppercase;
     color: #EFE7E2;
     margin-left: 17px;
+    max-width: 101px;
+    width: 100%;
 }
 
 .nav{
@@ -138,6 +140,7 @@ a .nav__item{
 
 .promo__wrap{
     display: flex;
+    flex-wrap: wrap;
     margin-left: 60px;
 }
 
@@ -209,6 +212,7 @@ a .nav__item{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .features__item{
@@ -264,8 +268,6 @@ a .nav__item{
 
 .about__photos{
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -277,7 +279,6 @@ a .nav__item{
 .about__buttons{
     margin-top: 60px;
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 30px;
 }
@@ -318,7 +319,6 @@ a .nav__item{
 .testimonial__item{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     gap: 24px;
 }
 
@@ -343,6 +343,7 @@ a .nav__item{
 .price__strizhki{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .price__head2{
@@ -412,6 +413,7 @@ a .nav__item{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 20px;
     margin-bottom: 25px;
 }
@@ -523,7 +525,8 @@ input:checked + label:before{
     gap: 25px;
     font-family: 'Montserrat', sans-serif;
     font-size: 21px;
-    line-height: 143%;color: #fff;
+    line-height: 143%;
+    color: #fff;
 }
 
 .contacts__list li:first-child{
@@ -603,7 +606,6 @@ input:checked + label:before{
 .master__text{
     font-family: 'Fira Sans';
     font-size: 18px;
-    line-height: 150%;
     color: #B7AAA2;
     width: 100%;
 }
