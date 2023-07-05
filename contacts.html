@@ -11,18 +11,20 @@
     <header class="header">
         <div class="container">
             <div class="header__wrap">
-                <a href="./index.html"><div class="header__logo">
-                    <img src="./images/logo.png" alt="Logo">
-                    <p class="logo__text">Cool Barber</p>
-                </div></a>
+                <div class="logo">
+                    <a href="/index.html">
+                        <div class="logo__img"><img src="./images/logo.png" alt="Logo"></div>
+                        <div class="logo__text">Cool Barber</div>
+                    </a>
+                </div>
 
                 <nav>
                     <ul class="nav">
-                        <a href="#"><li class="nav__item">About Us</li></a>
-                        <a href="./team.html"><li class="nav__item">Our masters</li></a>
-                        <a href="#"><li class="nav__item">Testimonials</li></a>
-                        <a href="#"><li class="nav__item">Our price</li></a>
-                        <a href="./contacts.html"><li class="nav__item">Contacts</li></a>
+                        <li class="nav__item"><a href="/#about">About Us</a></li>
+                        <li class="nav__item"><a href="./team.html">Our masters</a></li>
+                        <li class="nav__item"><a href="/#testimonial">Testimonials</a></li>
+                        <li class="nav__item"><a href="/#price">Our price</a></li>
+                        <li class="nav__item"><a href="./contacts.html">Contacts</a></li>
                     </ul>
                 </nav>
 
@@ -42,14 +44,17 @@
     <footer class="footer footer__contacts">
         <div class="contacts contacts2">
             <div class="container">
-                <div class="contacts__panel contacts__panel2">
-                    <h3 class="contacts__head about__head">Contacts</h3>
-                    <ul class="contacts__list">
-                        <li class="contacts__item">8 (800) 000-00-00</li>
-                        <li class="contacts__item">info@sitename.com</li>
-                        <li class="contacts__item">302 W 50th St, NY, NY 10019</li>
-                        <li class="contacts__item">Daily from 9 to 20</li>
-                    </ul>
+                <div class="contacts__wrap2">
+                    <div class="contacts__panel contacts__panel2">
+                        <h3 class="contacts__head contacts__head2 about__head">Contacts</h3>
+                        <ul class="contacts__list">
+                            <li class="contacts__item"><img src="./images/phone2.png" alt="Phone ico" />(800) 000-00-00</li>
+                                <li class="contacts__item"><img src="./images/mail.png" alt="Email ico" />info@sitename.com</li>
+                                <li class="contacts__item"><img src="./images/address2.png" alt="Address ico" />302 W 50th St, NY, NY 10019</li>
+                                <li class="contacts__item"><img src="./images/timetable.png" alt="Timetable ico" />Daily from 9 to 20</li>
+                        </ul>
+                    </div>
+                    <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1038.0129920587954!2d-73.98591380556468!3d40.76260074635273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598b4f41e787%3A0x46171cb606c416f4!2sBarber%20Shop%20NYC!5e0!3m2!1sru!2sby!4v1688027056345!5m2!1sru!2sby" width="1080" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
@@ -67,15 +72,11 @@
                     <input type="email" name="email" id="enty__email" placeholder="Email">
                     <button class="button enty__button">Book now</button>
                 </div>
-
-                <div class="enty__checkbox">
-                    <input type="checkbox" name="checkbox" id="enty__check">
-                    <label for="enty__check">By clicking on the button, you agree to the terms of processing personal data</label>
-                </div>
             </div>
         </div>
     </div>
 
     <div class="footer__top footer__top2">© All rights reserved</div>
 </body>
+<script src="./js/script.js"></script>
 </html>

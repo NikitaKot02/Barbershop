@@ -14,18 +14,20 @@
         <header class="header">
             <div class="container">
                 <div class="header__wrap">
-                    <a href="/"><div class="header__logo">
-                        <img src="./images/logo.png" alt="Logo">
-                        <p class="logo__text">Cool Barber</p>
-                    </div></a>
+                    <div class="logo">
+                        <a href="/">
+                            <div class="logo__img"><img src="./images/logo.png" alt="Logo"></div>
+                            <div class="logo__text">Cool Barber</div>
+                        </a>
+                    </div>
 
                     <nav>
                         <ul class="nav">
-                            <a href="#"><li class="nav__item">About Us</li></a>
-                            <a href="./team.html"><li class="nav__item">Our masters</li></a>
-                            <a href="#"><li class="nav__item">Testimonials</li></a>
-                            <a href="#"><li class="nav__item">Our price</li></a>
-                            <a href="./contacts.html"><li class="nav__item">Contacts</li></a>
+                            <li class="nav__item"><a href="#about">About Us</a></li>
+                            <li class="nav__item"><a href="./team.html">Our masters</a></li>
+                            <li class="nav__item"><a href="#testimonial">Testimonials</a></li>
+                            <li class="nav__item"><a href="#price">Our price</a></li>
+                            <li class="nav__item"><a href="./contacts.html">Contacts</a></li>
                         </ul>
                     </nav>
 
@@ -38,6 +40,12 @@
                         </div>
                         <div class="header__ico"><img src="./images/phone.png" alt="Phone ico"></div>
                     </div>
+
+                    <div class="menu__ico">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
                 </div>
             </div>
         </header>
@@ -48,12 +56,22 @@
                     <div class="promo__wrap">
                         <h2 class="promo__head">Men’s Barbershop in The Middle East</h2>
                         <div class="promo__wrap-2">
-                            <button class="button promo__head-2">THE HIGHEST RATED</button>
+                            <button class="button promo__head-2"><a href="#">THE HIGHEST RATED</a></button>
                             <p class="promo__descr">Text that is placed at the bottom of the heading to reveal details</p>
                         </div>
                     </div>
-                    <button class="button promo__button">Book now</button>
+                    <button class="button promo__button"><a href="#">Book now</a></button>
                 </div>
+<!-- 
+                <form>
+                    <input data-type="input" type="text" name="name" id="form__name" placeholder="Your name">
+                    <input data-type="input" type="email" name="email" id="form__email" placeholder="Your email">
+                    <button data-type="button" class="button form__button" type="submit">OK</button>
+                    <div class="popop__modal">
+                        <div class="popup__close">&#215;</div>
+                        <div class="popup__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, perspiciatis sunt impedit pariatur laudantium exercitationem maiores harum ab possimus dolorum nisi, a ratione, nulla perferendis molestiae dolor. Autem, earum. Quis asperiores accusantium quos in rerum molestiae assumenda eligendi itaque recusandae facilis. Vel sunt voluptatibus rem, obcaecati a neque architecto deleniti.</div>
+                    </div>
+                </form> -->
             </div>
         </section>
 
@@ -81,7 +99,7 @@
             </div>
         </section>
 
-        <section class="about-us">
+        <section class="about-us" id="about">
             <div class="container">
                 <div class="about__heading">
                     <h3 class="about__head">About Us</h3>
@@ -89,22 +107,29 @@
                 </div>
 
                 <div class="about__photos">
-                    <div class="about__img"><img src="./images/photo1.png" alt="Photo2"></div>
-                    <div class="about__img"><img src="./images/photo2.png" alt="Photo3"></div>
-                    <div class="about__img"><img src="./images/photo3.png" alt="Photo1"></div>
-                    <div class="about__img"><img src="./images/photo4.png" alt="Photo4"></div>
-                    <div class="about__img"><img src="./images/photo5.png" alt="Photo5"></div>
-                    <div class="about__img"><img src="./images/photo6.png" alt="Photo6"></div>
+                    <a class="about__img about__img1" href="./images/photo1.png" data-type="img"><img src="./images/photo1.png" alt="Photo1"></a>
+                    <a class="about__img" href="./images/photo2.png" data-type="img"><img src="./images/photo2.png" alt="Photo2"></a>
+                    <a class="about__img" href="./images/photo3.png" data-type="img"><img src="./images/photo3.png" alt="Photo3"></a>
+                    <a class="about__img" href="./images/photo4.png" data-type="img"><img src="./images/photo4.png" alt="Photo4"></a>
+                    <a class="about__img" href="./images/photo5.png" data-type="img"><img src="./images/photo5.png" alt="Photo5"></a>
+                    <a class="about__img about__img2" href="./images/photo6.png" data-type="img"><img src="./images/photo6.png" alt="Photo6"></a>
                 </div>
 
+                <!-- <div class="popup">
+                    <div class="popop__modal">
+                        <div class="popup__close">&#215;</div>
+                        <div class="popup__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, perspiciatis sunt impedit pariatur laudantium exercitationem maiores harum ab possimus dolorum nisi, a ratione, nulla perferendis molestiae dolor. Autem, earum. Quis asperiores accusantium quos in rerum molestiae assumenda eligendi itaque recusandae facilis. Vel sunt voluptatibus rem, obcaecati a neque architecto deleniti.</div>
+                    </div>
+                </div> -->
+
                 <div class="about__buttons">
-                    <button class="button about__button">Our masters and their masterpieces</button>
-                    <button class="button about__button promo__head2">Our Instagram</button>
+                    <button class="button about__button"><a href="./team.html">Our masters and their masterpieces</a></button>
+                    <button class="button about__button promo__head2"><a href="https://www.instagram.com">Our Instagram</a></button>
                 </div>
             </div>
         </section>
 
-        <section class="testimonial">
+        <section class="testimonial" id="testimonial">
             <div class="container">
                 <div class="testimonial__heading about__heading">
                     <h3 class="testimonial__head about__head">Testimonials</h3>
@@ -112,79 +137,92 @@
                 </div>
 
                 <div class="testimonial__slider">
-                    <div class="testimonial__arrows"><img src="./images/arrows.png" alt="Arrows"></div>
-                    <div class="testimonial__item">
-                        <div class="testimonial__ico"><img src="./images/man1.png" alt="Man1" class="item__icon" /></div>
-                        <h3 class="testimonial__head">Darrell Steward</h3>
-                        <p class="testimonial__text">Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.</p>
-                        <div class="testimonial__button"><a href="#">Read full testimonial</a></div>
+                    <div class="testimonial__arrows">
+                        <div class="testimonial__arrow testimonial__arrowL"><img src="./images/arrowL.png" alt="Left arrow"></div>
+                        <div class="testimonial__arrow testimonial__arrowR"><img src="./images/arrowR.png" alt="Right arrow"></div>
                     </div>
+                    
+                    <div class="testimonial__items">
+                        <div class="testimonial__item">
+                            <div class="testimonial__ico"><img src="./images/man1.png" alt="Man1" class="item__icon" /></div>
+                            <h3 class="testimonial__head">Darrell Steward</h3>
+                            <p class="testimonial__text">Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.</p>
+                            <div class="testimonial__button"><a href="#">Read full testimonial</a></div>
+                        </div>
 
-                    <div class="testimonial__item">
-                        <div class="testimonial__ico"><img src="./images/man2.png" alt="Man2" class="item__icon" /></div>
-                        <h3 class="testimonial__head">Darrell Steward</h3>
-                        <p class="testimonial__text">Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.</p>
-                        <div class="testimonial__button"><a href="#">Read full testimonial</a></div>
-                    </div>
+                        <div class="testimonial__item">
+                            <div class="testimonial__ico"><img src="./images/man2.png" alt="Man2" class="item__icon" /></div>
+                            <h3 class="testimonial__head">Marvin McKinney</h3>
+                            <p class="testimonial__text">Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.</p>
+                            <div class="testimonial__button"><a href="#">Read full testimonial</a></div>
+                        </div>
 
-                    <div class="testimonial__item">
-                        <div class="testimonial__ico"><img src="./images/man3.png" alt="Man3" class="item__icon" /></div>
-                        <h3 class="testimonial__head">Darrell Steward</h3>
-                        <p class="testimonial__text">Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.</p>
-                        <div class="testimonial__button"><a href="#">Read full testimonial</a></div>
-                    </div>
+                        <div class="testimonial__item">
+                            <div class="testimonial__ico"><img src="./images/man3.png" alt="Man3" class="item__icon" /></div>
+                            <h3 class="testimonial__head">Ronald Richards</h3>
+                            <p class="testimonial__text">Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.</p>
+                            <div class="testimonial__button"><a href="#">Read full testimonial</a></div>
+                        </div>
 
-                    <div class="testimonial__item">
-                        <div class="testimonial__ico"><img src="./images/man4.png" alt="Man4" class="item__icon" /></div>
-                        <h3 class="testimonial__head">Darrell Steward</h3>
-                        <p class="testimonial__text">Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.</p>
-                        <div class="testimonial__button"><a href="#">Read full testimonial</a></div>
+                        <div class="testimonial__item">
+                            <div class="testimonial__ico"><img src="./images/man4.png" alt="Man4" class="item__icon" /></div>
+                            <h3 class="testimonial__head">Cody Fisher</h3>
+                            <p class="testimonial__text">Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.</p>
+                            <div class="testimonial__button"><a href="#">Read full testimonial</a></div>
+                        </div>
+
+                        <div class="testimonial__item">
+                            <div class="testimonial__ico"><img src="./images/beard-mo.png" alt="Man5" class="item__icon" /></div>
+                            <h3 class="testimonial__head">Bob Petrov</h3>
+                            <p class="testimonial__text">Describe the feedback or end result the person received after interacting with you. What exactly did it give him. You can describe the result in numbers to be specific.</p>
+                            <div class="testimonial__button"><a href="#">Read full testimonial</a></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="price">
+        <section class="price" id="price">
             <div class="container">
                 <div class="price__heading about__heading">
                     <h3 class="price__head about__head">Our Price</h3>
                     <p class="price__text about__text">Subheading that reveals the details of the title and calls for the targeted action</p>
                 </div>
 
-                <div class="price__strizhki">
-                    <div class="price__spisok">
+                <div class="price__haircuts">
+                    <div class="price__list">
                         <div class="price__item">
                             <div class="price__img"><img src="./images/haircuts.png" alt="Haircuts" /></div>
 
                             <h2 class="price__head2">Haircuts</h2>
 
-                            <ul class="price__vidi">
-                                <li class="price__vid">
+                            <ul class="price__kinds">
+                                <li class="price__kind">
                                     <span class="price__name">Regular Haircut</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$20</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Haircut + Shave</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$19</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Haircut + Beard Trim</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$30</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Beard Trim</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$22</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Hair Tatoo</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$45</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Facial</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$15</span>
@@ -193,39 +231,39 @@
                         </div>
                     </div>
 
-                    <div class="price__spisok">
+                    <div class="price__list">
                         <div class="price__item">
                             <div class="price__img"><img src="./images/beard-mo.png" alt="Beard&Mo" /></div>
                             
                             <h2 class="price__head2">Beard & Mo</h2>
 
-                            <ul class="price__vidi">
-                                <li class="price__vid">
+                            <ul class="price__kinds">
+                                <li class="price__kind">
                                     <span class="price__name">Regular Haircut</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$20</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Haircut + Shave</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$19</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Haircut + Beard Trim</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$30</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Beard Trim</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$22</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Hair Tatoo</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$45</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Facial</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$15</span>
@@ -234,39 +272,39 @@
                         </div>
                     </div>
 
-                    <div class="price__spisok">
+                    <div class="price__list">
                         <div class="price__item">
                             <div class="price__img"><img src="./images/shaving.png" alt="Shaving" /></div>
                             
                             <h2 class="price__head2">Shaving</h2>
 
-                            <ul class="price__vidi">
-                                <li class="price__vid">
+                            <ul class="price__kinds">
+                                <li class="price__kind">
                                     <span class="price__name">Regular Haircut</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$20</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Haircut + Shave</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$19</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Haircut + Beard Trim</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$30</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Beard Trim</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$22</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Hair Tatoo</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$45</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Facial</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$15</span>
@@ -275,39 +313,39 @@
                         </div>
                     </div>
 
-                    <div class="price__spisok">
+                    <div class="price__list">
                         <div class="price__item">
                             <div class="price__img"><img src="./images/waxing.png" alt="Waxing" /></div>
                             
                             <h2 class="price__head2">Waxing</h2>
 
-                            <ul class="price__vidi">
-                                <li class="price__vid">
-                                    <span class="price__name">Regular Haircut</span>
-                                    <span class="price__time">60 min</span>
-                                    <span class="price__stoim">$20</span>
+                            <ul class="price__kinds">
+                                <li class="price__kind">
+                                    <div class="price__name">Regular Haircut</div>
+                                    <div class="price__time">60 min</div>
+                                    <div class="price__stoim">$20</div>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Haircut + Shave</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$19</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Haircut + Beard Trim</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$30</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Beard Trim</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$22</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Hair Tatoo</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$45</span>
                                 </li>
-                                <li class="price__vid">
+                                <li class="price__kind">
                                     <span class="price__name">Facial</span>
                                     <span class="price__time">60 min</span>
                                     <span class="price__stoim">$15</span>
@@ -331,11 +369,6 @@
                         <input type="email" name="email" id="enty__email" placeholder="Email">
                         <button class="button enty__button">Book now</button>
                     </div>
-
-                    <div class="enty__checkbox">
-                        <input type="checkbox" name="checkbox" id="enty__check">
-                        <label for="enty__check">By clicking on the button, you agree to the terms of processing personal data</label>
-                    </div>
                 </div>
             </div>
         </div>
@@ -343,14 +376,17 @@
         <footer class="footer">
             <div class="contacts">
                 <div class="container">
-                    <div class="contacts__panel">
-                        <h3 class="contacts__head about__head">Contacts</h3>
-                        <ul class="contacts__list">
-                            <li class="contacts__item">8 (800) 000-00-00</li>
-                            <li class="contacts__item">info@sitename.com</li>
-                            <li class="contacts__item">302 W 50th St, NY, NY 10019</li>
-                            <li class="contacts__item">Daily from 9 to 20</li>
-                        </ul>
+                    <div class="contacts__wrap">
+                        <div class="contacts__panel">
+                            <h3 class="contacts__head about__head">Contacts</h3>
+                            <ul class="contacts__list">
+                                <li class="contacts__item"><img src="./images/phone2.png" alt="Phone ico" />(800) 000-00-00</li>
+                                <li class="contacts__item"><img src="./images/mail.png" alt="Email ico" />info@sitename.com</li>
+                                <li class="contacts__item"><img src="./images/address2.png" alt="Address ico" />302 W 50th St, NY, NY 10019</li>
+                                <li class="contacts__item"><img src="./images/timetable.png" alt="Timetable ico" />Daily from 9 to 20</li>
+                            </ul>
+                        </div>
+                        <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1038.0129920587954!2d-73.98591380556468!3d40.76260074635273!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2598b4f41e787%3A0x46171cb606c416f4!2sBarber%20Shop%20NYC!5e0!3m2!1sru!2sby!4v1688027056345!5m2!1sru!2sby" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>
@@ -365,4 +401,5 @@
 
     </div>
 </body>
+<script src="./js/script.js"></script>
 </html>
