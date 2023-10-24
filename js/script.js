@@ -21,6 +21,37 @@
 
 // menuBurg('.header')
 
+// document.getElementById('promo__button').onclick = () => {
+//     document.getElementById('enty').scrollIntoView({behavior: 'smooth'});
+// }
+
+// let links = document.querySelectorAll('.link');
+// for (let i = 0; i < links.length; i++) {
+//     links[i].onclick = () => {
+//         document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
+//     }
+    
+// }
+
+// document.getElementById('team').onclick = () => {
+//     document.location.href = 'team.html';
+// }
+
+// document.getElementById('teamBut').onclick = () => {
+//     document.location.href = 'team.html';
+// }
+
+// document.getElementById('contacts').onclick = () => {
+//     document.location.href = 'contacts.html';
+// }
+
+// let linkPage = document.getElementById('team');
+// for (let i = 0; i < links.length; i++) {
+//     links[i].onclick = () => {
+//         document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
+//     }
+    
+// }
 
 const slider = selector => {
     const slidersContainer = document.querySelectorAll(selector);
@@ -134,19 +165,28 @@ const popup = selector => {
 popup('a');
 
 
-const btn = document.querySelector('.button master__button');
-const content = document.querySelector('.master__photos-2');
+// let butClick = document.getElementById('master__button');
+// butClick.addEventListener('click', toggleBlock);
+// let blockShow = document.querySelector('.master__photos-2');
 
-btn.addEventListener('click', btnClick);
+// function toggleBlock() {
+//     let blockShow = document.querySelectorAll('.master__photos-2');
+//     blockShow.classList.toggle('master__hidden');
+// }
 
-function btnClick() {
-    console.log(content.classList);
+// if (blockShow.classList.contains('master__hidden')) {
+//     butClick.value = 'See all works';
+// } else {
+//     butClick.value = 'Close';
+// }
 
-    if (content.classList.contains('hidden')) {
-        btn.textContent = 'See all works';
-    } else {
-        btn.textContent = 'Close';
-    }
+document.addEventListener('DOMContentLoaded', hiddenCloseclick());
+  document.getElementById('master__button').addEventListener('click', hiddenCloseclick);
+	function hiddenCloseclick() {
+	let x = document.querySelector('master__photos-2');
+      if (x.style.display == 'none'){
+	  x.style.display = 'block';
+	  } else {
+	    x.style.display = 'none'}
+    };
 
-    content.classList.toggle('hidden');
-}

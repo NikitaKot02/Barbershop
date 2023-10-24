@@ -23,11 +23,11 @@
 
                     <nav>
                         <ul class="nav">
-                            <li class="nav__item"><a href="#about">About Us</a></li>
-                            <li class="nav__item"><a href="./team.html">Our masters</a></li>
-                            <li class="nav__item"><a href="#testimonial">Testimonials</a></li>
-                            <li class="nav__item"><a href="#price">Our price</a></li>
-                            <li class="nav__item"><a href="./contacts.html">Contacts</a></li>
+                            <li class="nav__item"><a class="link" data-link="about">About Us</a></li>
+                            <li class="nav__item"><a id="team">Our masters</a></li>
+                            <li class="nav__item"><a class="link" data-link="testimonial">Testimonials</a></li>
+                            <li class="nav__item"><a class="link" data-link="price">Our price</a></li>
+                            <li class="nav__item"><a id="contacts">Contacts</a></li>
                         </ul>
                     </nav>
 
@@ -60,18 +60,8 @@
                             <p class="promo__descr">Text that is placed at the bottom of the heading to reveal details</p>
                         </div>
                     </div>
-                    <button class="button promo__button"><a href="#">Book now</a></button>
+                    <button class="button promo__button" id="promo__button"><a>Book now</a></button>
                 </div>
-<!-- 
-                <form>
-                    <input data-type="input" type="text" name="name" id="form__name" placeholder="Your name">
-                    <input data-type="input" type="email" name="email" id="form__email" placeholder="Your email">
-                    <button data-type="button" class="button form__button" type="submit">OK</button>
-                    <div class="popop__modal">
-                        <div class="popup__close">&#215;</div>
-                        <div class="popup__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, perspiciatis sunt impedit pariatur laudantium exercitationem maiores harum ab possimus dolorum nisi, a ratione, nulla perferendis molestiae dolor. Autem, earum. Quis asperiores accusantium quos in rerum molestiae assumenda eligendi itaque recusandae facilis. Vel sunt voluptatibus rem, obcaecati a neque architecto deleniti.</div>
-                    </div>
-                </form> -->
             </div>
         </section>
 
@@ -123,7 +113,7 @@
                 </div> -->
 
                 <div class="about__buttons">
-                    <button class="button about__button"><a href="./team.html">Our masters and their masterpieces</a></button>
+                    <button class="button about__button"><a id="teamBut">Our masters and their masterpieces</a></button>
                     <button class="button about__button promo__head2"><a href="https://www.instagram.com">Our Instagram</a></button>
                 </div>
             </div>
@@ -358,7 +348,7 @@
         </section>
 
         <div class="container">
-            <div class="enty">
+            <div class="enty" id="enty">
                 <div class="enty__heading">
                         <h3 class="enty__head">Get in consultation with our expert barbers</h3>
                         <p class="enty__text">Get in consultation with our expert barbers</p>

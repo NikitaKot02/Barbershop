@@ -92,6 +92,7 @@ ul{
     color: #EFE7E2;
     font-size: 15px;
     line-height: 135%;
+    cursor: pointer;
 }
 
 .header__contacts{
@@ -662,14 +663,10 @@ form input::placeholder{
     margin-left: 20px;
 }
 
-.master__photos{
+.master__photos, .master__photos-2{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-}
-
-.hid{
-    display: none;
 }
 
 .master__button{
@@ -726,11 +723,8 @@ form input::placeholder{
 .popup__close:hover{
     opacity: 1;
 }
+/* 
+.master__hidden{
+    display: none !important;
+} */
 
-.hide-element{
-    display: none;
-}
-
-.master__photos-2{
-    display: none;
-}
