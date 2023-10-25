@@ -21,37 +21,37 @@
 
 // menuBurg('.header')
 
-// document.getElementById('promo__button').onclick = () => {
-//     document.getElementById('enty').scrollIntoView({behavior: 'smooth'});
-// }
+document.getElementById('promo__button').onclick = () => {
+    document.getElementById('enty').scrollIntoView({behavior: 'smooth'});
+}
 
-// let links = document.querySelectorAll('.link');
-// for (let i = 0; i < links.length; i++) {
-//     links[i].onclick = () => {
-//         document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
-//     }
+let links = document.querySelectorAll('.link');
+for (let i = 0; i < links.length; i++) {
+    links[i].onclick = () => {
+        document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
+    }
     
-// }
+}
 
-// document.getElementById('team').onclick = () => {
-//     document.location.href = 'team.html';
-// }
+document.getElementById('team').onclick = () => {
+    document.location.href = 'team.html';
+}
 
-// document.getElementById('teamBut').onclick = () => {
-//     document.location.href = 'team.html';
-// }
+document.getElementById('teamBut').onclick = () => {
+    document.location.href = 'team.html';
+}
 
-// document.getElementById('contacts').onclick = () => {
-//     document.location.href = 'contacts.html';
-// }
+document.getElementById('contacts').onclick = () => {
+    document.location.href = 'contacts.html';
+}
 
-// let linkPage = document.getElementById('team');
-// for (let i = 0; i < links.length; i++) {
-//     links[i].onclick = () => {
-//         document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
-//     }
+let linkPage = document.getElementById('team');
+for (let i = 0; i < links.length; i++) {
+    links[i].onclick = () => {
+        document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
+    }
     
-// }
+}
 
 const slider = selector => {
     const slidersContainer = document.querySelectorAll(selector);
