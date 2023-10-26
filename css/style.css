@@ -87,12 +87,22 @@ ul{
     margin-left: 70px;
 }
 
+.nav__link {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300
+}
+
 .nav__item a{
     font-family: 'Fira Sans', serif;
     color: #EFE7E2;
     font-size: 15px;
     line-height: 135%;
     cursor: pointer;
+}
+
+.burger__menu{
+    display: none;
 }
 
 .header__contacts{

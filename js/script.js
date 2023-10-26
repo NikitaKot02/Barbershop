@@ -1,57 +1,50 @@
 
-// const menuBurg = selector => {
-//     const menuContainer = document.querySelectorAll(selector);
+const menu = document.querySelector('.nav'),
+menuItem = document.querySelectorAll('.nav_item'),
+burgerMenu = document.querySelector('.burger__menu');
 
-//     const menuHandler = menuBrg => {
-//         const menuBtn = menuBrg.querySelector('.menu__ico');
-//         if (!menuBtn) return;
-//         const menu = menuBrg.querySelector('.nav');
-//         if (!menu) return;
-//     }
-   
-//     menuContainer.forEach
-//     menuBtn.addEventListener('click', () => {
-//         menuBtn.classList.toggle('active');
-//         menu.classList.toggle('active');
-//     });
+burgerMenu.addEventListener('click', () => {
+    burgerMenu.classList.toggle('burger__active');
+    menu.classList.toggle('nav__active');
+});
 
-//     menuContainer.forEach(menuCont => menuHandler(menuCont));
-    
+menuItem.forEach(item => {
+    item.addEventListener('click', () => {
+        hamburger.classList.toggle('burger__active');
+        menu.classList.toggle('nav__active');
+    });
+});
+
+
+// document.getElementById('promo__button').onclick = () => {
+//     document.getElementById('enty').scrollIntoView({behavior: 'smooth'});
 // }
 
-// menuBurg('.header')
+// let links = document.querySelectorAll('.link');
+// for (let i = 0; i < links.length; i++) {
+//     links[i].onclick = () => {
+//         document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
+//     } 
+// }
 
-document.getElementById('promo__button').onclick = () => {
-    document.getElementById('enty').scrollIntoView({behavior: 'smooth'});
-}
+// document.getElementById('team').onclick = () => {
+//     document.location.href = 'team.html';
+// }
 
-let links = document.querySelectorAll('.link');
-for (let i = 0; i < links.length; i++) {
-    links[i].onclick = () => {
-        document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
-    }
-    
-}
+// document.getElementById('teamBut').onclick = () => {
+//     document.location.href = 'team.html';
+// }
 
-document.getElementById('team').onclick = () => {
-    document.location.href = 'team.html';
-}
+// document.getElementById('contacts').onclick = () => {
+//     document.location.href = 'contacts.html';
+// }
 
-document.getElementById('teamBut').onclick = () => {
-    document.location.href = 'team.html';
-}
-
-document.getElementById('contacts').onclick = () => {
-    document.location.href = 'contacts.html';
-}
-
-let linkPage = document.getElementById('team');
-for (let i = 0; i < links.length; i++) {
-    links[i].onclick = () => {
-        document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
-    }
-    
-}
+// let linkPage = document.getElementById('team');
+// for (let i = 0; i < links.length; i++) {
+//     links[i].onclick = () => {
+//         document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
+//     }
+// }
 
 const slider = selector => {
     const slidersContainer = document.querySelectorAll(selector);
@@ -165,6 +158,30 @@ const popup = selector => {
 popup('a');
 
 
+let phone = document.getElementById('enty__phone');
+let email = document.getElementById('enty__email');
+
+document.getElementById('enty__but').onclick = () => {
+    let hasError = false;
+
+    [phone, email].forEach(item => {
+        if (!item.value) {
+            item.style.background = 'red';
+            hasError = true;
+        }else{
+            item.style.background = '';
+        }
+    });
+
+    if (!hasError){
+        [phone, email].forEach(item => {
+            item.value = '';
+        });
+        alert('Thank you!')
+    }
+}
+
+
 // let butClick = document.getElementById('master__button');
 // butClick.addEventListener('click', toggleBlock);
 // let blockShow = document.querySelector('.master__photos-2');
@@ -180,13 +197,13 @@ popup('a');
 //     butClick.value = 'Close';
 // }
 
-document.addEventListener('DOMContentLoaded', hiddenCloseclick());
-  document.getElementById('master__button').addEventListener('click', hiddenCloseclick);
-	function hiddenCloseclick() {
-	let x = document.querySelector('master__photos-2');
-      if (x.style.display == 'none'){
-	  x.style.display = 'block';
-	  } else {
-	    x.style.display = 'none'}
-    };
+// document.addEventListener('DOMContentLoaded', hiddenCloseclick());
+//   document.getElementById('master__button').addEventListener('click', hiddenCloseclick);
+// 	function hiddenCloseclick() {
+// 	let x = document.querySelector('master__photos-2');
+//       if (x.style.display == 'none'){
+// 	  x.style.display = 'block';
+// 	  } else {
+// 	    x.style.display = 'none'}
+//     };
 
