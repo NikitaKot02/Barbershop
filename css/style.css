@@ -370,25 +370,20 @@ form input::placeholder{
 
 .testimonial__arrows{
     display: flex;
+    position: absolute;
 }
 
 .testimonial__arrow{
     cursor: pointer;
-    position: absolute;
-    top: 123px;
-    z-index: 999;
-}
-
-.testimonial__arrow::hover{
+    margin-top: -370px;
 }
 
 .testimonial__arrowL{
-    position: absolute;
+    margin-left: -60px;
 }
 
 .testimonial__arrowR{
-    position: absolute;
-    left: 1145px;
+   margin-left: 1235px;
 } 
 
 .testimonial__item{

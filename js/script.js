@@ -1,24 +1,25 @@
 
-const menu = document.querySelector('.nav'),
-menuItem = document.querySelectorAll('.nav_item'),
-burgerMenu = document.querySelector('.burger__menu');
+// const menu = document.querySelector('.nav'),
+//     menuItem = document.querySelectorAll('.nav_item'),
+//     burgerMenu = document.querySelector('.burger__menu');
 
-burgerMenu.addEventListener('click', () => {
-    burgerMenu.classList.toggle('burger__active');
-    menu.classList.toggle('nav__active');
-});
+// burgerMenu.addEventListener('click', () => {
+//     burgerMenu.classList.toggle('burger__active');
+//     menu.classList.toggle('nav__active');
+// });
 
-menuItem.forEach(item => {
-    item.addEventListener('click', () => {
-        hamburger.classList.toggle('burger__active');
-        menu.classList.toggle('nav__active');
-    });
-});
+// menuItem.forEach(item => {
+//     item.addEventListener('click', () => {
+//         hamburger.classList.toggle('burger__active');
+//         menu.classList.toggle('nav__active');
+//     });
+// });
 
 
 // document.getElementById('promo__button').onclick = () => {
 //     document.getElementById('enty').scrollIntoView({behavior: 'smooth'});
 // }
+
 
 // let links = document.querySelectorAll('.link');
 // for (let i = 0; i < links.length; i++) {
@@ -27,17 +28,21 @@ menuItem.forEach(item => {
 //     } 
 // }
 
+
 // document.getElementById('team').onclick = () => {
 //     document.location.href = 'team.html';
 // }
+
 
 // document.getElementById('teamBut').onclick = () => {
 //     document.location.href = 'team.html';
 // }
 
+
 // document.getElementById('contacts').onclick = () => {
 //     document.location.href = 'contacts.html';
 // }
+
 
 // let linkPage = document.getElementById('team');
 // for (let i = 0; i < links.length; i++) {
@@ -45,6 +50,7 @@ menuItem.forEach(item => {
 //         document.getElementById(links[i].getAttribute('data-link')).scrollIntoView({behavior: 'smooth'});
 //     }
 // }
+
 
 const slider = selector => {
     const slidersContainer = document.querySelectorAll(selector);
@@ -60,7 +66,7 @@ const slider = selector => {
         if (!buttons) return;
 
         const switchSlide = event => {
-            const buf = event.target.classList.contains('testimonial__arrowR');
+            const buf = event.target.classList.contains('.testimonial__arrowR');
 
             let x = sliders.style.transform || '0';
             x = x.replace('translate(', "");
@@ -74,7 +80,7 @@ const slider = selector => {
                 }
             } else{
                 if (x > 0){
-                    x -= 6;
+                    x -= 24;
                 } else{
                     x = (slides.length * 6) - 6;
                 }
@@ -91,95 +97,96 @@ const slider = selector => {
     slidersContainer.forEach(slide => sliderHandler(slide));
 }
 
-slider('.testimonial__slider');
+slider('.testimonial');
 
 
 
-const popup = selector => {
-    const elems = document.querySelectorAll(selector);
-    if (!elems) return;
+// const popup = selector => {
+//     const elems = document.querySelectorAll(selector);
+//     if (!elems) return;
 
-    const show = content => {
-        let popUpContainer = document.createElement('div');
-        let popUpModal = document.createElement('div');
-        let popUpClose = document.createElement('div');
-        let popUpContent = document.createElement('div');
+//     const show = content => {
+//         let popUpContainer = document.createElement('div');
+//         let popUpModal = document.createElement('div');
+//         let popUpClose = document.createElement('div');
+//         let popUpContent = document.createElement('div');
 
-        popUpContainer.classList.add('popup');
-        popUpModal.classList.add('popup__modal');
-        popUpClose.classList.add('popup__close');
-        popUpContent.classList.add('popup__content');
+//         popUpContainer.classList.add('popup');
+//         popUpModal.classList.add('popup__modal');
+//         popUpClose.classList.add('popup__close');
+//         popUpContent.classList.add('popup__content');
 
-        popUpClose.innerHTML = '&#215;';
-        popUpContent.append(content);
+//         popUpClose.innerHTML = '&#215;';
+//         popUpContent.append(content);
 
-        popUpClose.addEventListener('click', () => popUpContainer.remove());
+//         popUpClose.addEventListener('click', () => popUpContainer.remove());
 
-        popUpModal.append(popUpClose, popUpContent);
-        popUpContainer.append(popUpModal);
+//         popUpModal.append(popUpClose, popUpContent);
+//         popUpContainer.append(popUpModal);
 
-        document.body.append(popUpContainer);
-    }
+//         document.body.append(popUpContainer);
+//     }
     
-    const popUpHandler = event => {
-        event.preventDefault();
+//     const popUpHandler = event => {
+//         event.preventDefault();
 
-        let elem = event.target;
-        let type = elem.dataset.type;
+//         let elem = event.target;
+//         let type = elem.dataset.type;
 
-        if (!type){
-            let parent = elem.closest('[data-type]');
+//         if (!type){
+//             let parent = elem.closest('[data-type]');
 
-            if (!parent) return;
-            type = parent.dataset.type;
-            if (!type) return;
-            elem = parent;
-        }
+//             if (!parent) return;
+//             type = parent.dataset.type;
+//             if (!type) return;
+//             elem = parent;
+//         }
 
-        let content = '';
+//         let content = '';
 
-        if (type === 'img'){
-            const href = elem.href;
-            if (!href) return;
+//         if (type === 'img'){
+//             const href = elem.href;
+//             if (!href) return;
 
-            let img = document.createElement('img');
-            img.setAttribute('src', href);
-            content = img;
-        }
+//             let img = document.createElement('img');
+//             img.setAttribute('src', href);
+//             content = img;
+//         }
 
-        show(content);
-    }
+//         show(content);
+//     }
 
-    elems.forEach(elem => {
-        elem.addEventListener('click', popUpHandler);
-    });
-}
+//     elems.forEach(elem => {
+//         elem.addEventListener('click', popUpHandler);
+//     });
+// }
 
-popup('a');
+// popup('a');
 
 
-let phone = document.getElementById('enty__phone');
-let email = document.getElementById('enty__email');
+// let phone = document.getElementById('enty__phone');
+// let email = document.getElementById('enty__email');
 
-document.getElementById('enty__but').onclick = () => {
-    let hasError = false;
+// document.getElementById('enty__but').onclick = () => {
+//     let hasError = false;
 
-    [phone, email].forEach(item => {
-        if (!item.value) {
-            item.style.background = 'red';
-            hasError = true;
-        }else{
-            item.style.background = '';
-        }
-    });
+//     [phone, email].forEach(item => {
+//         if (!item.value) {
+//             item.style.background = 'red';
+//             hasError = true;
+//         }else{
+//             item.style.background = '';
+//         }
+//     });
 
-    if (!hasError){
-        [phone, email].forEach(item => {
-            item.value = '';
-        });
-        alert('Thank you!')
-    }
-}
+//     if (!hasError){
+//         [phone, email].forEach(item => {
+//             item.value = '';
+//         });
+//         alert('Thank you!')
+//     }
+// }
+
 
 
 // let butClick = document.getElementById('master__button');
