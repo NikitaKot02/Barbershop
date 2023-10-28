@@ -38,6 +38,11 @@ ul{
     background: #FF6E40;
     border: none;
     cursor: pointer;
+    transition: .3s linear;
+}
+
+.button:hover{
+    background: #f79678;
 }
 
 .button a{
@@ -46,6 +51,7 @@ ul{
     font-size: 20px;
     line-height: 152%;
     color: #fff;
+    transition: .3s linear;
 }
 
 .container{
@@ -99,6 +105,11 @@ ul{
     font-size: 15px;
     line-height: 135%;
     cursor: pointer;
+    transition: .2s linear;
+}
+
+.nav__item a:hover{
+    color: #e2cd98;
 }
 
 .burger__menu{
@@ -405,6 +416,11 @@ form input::placeholder{
     font-size: 14px;
     line-height: 135%;
     color: #FF6E40;
+    transition: .3s linear;
+}
+
+.testimonial__button a:hover{
+    color: #cc9584;
 }
 
 .price{
@@ -728,8 +744,8 @@ form input::placeholder{
 .popup__close:hover{
     opacity: 1;
 }
-/* 
+ 
 .master__hidden{
-    display: none !important;
-} */
+    display: none;
+}
 

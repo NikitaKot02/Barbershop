@@ -16,8 +16,8 @@
 // });
 
 
-// document.getElementById('promo__button').onclick = () => {
-//     document.getElementById('enty').scrollIntoView({behavior: 'smooth'});
+// document.querySelector('.promo__button').onclick = () => {
+//     document.querySelectorAll('.enty').scrollIntoView({behavior: 'smooth'});
 // }
 
 
@@ -52,53 +52,52 @@
 // }
 
 
-const slider = selector => {
-    const slidersContainer = document.querySelectorAll(selector);
+// const slider = selector => {
+//     const slidersContainer = document.querySelectorAll(selector);
 
-    const sliderHandler = slideContainer => {
-        const sliders = slideContainer.querySelector('.testimonial__items');
-        if (!sliders) return;
+//     const sliderHandler = slideContainer => {
+//         const sliders = slideContainer.querySelector('.testimonial__items');
+//         if (!sliders) return;
 
-        const slides = slideContainer.querySelectorAll('.testimonial__item');
-        if (!slides || !slides.length > 1) return;
+//         const slides = slideContainer.querySelectorAll('.testimonial__item');
+//         if (!slides || !slides.length > 1) return;
 
-        const buttons = slideContainer.querySelectorAll('.testimonial__arrow');
-        if (!buttons) return;
+//         const buttons = slideContainer.querySelectorAll('.testimonial__arrow');
+//         if (!buttons) return;
 
-        const switchSlide = event => {
-            const buf = event.target.classList.contains('.testimonial__arrowR');
+//         const switchSlide = event => {
+//             const buf = event.target.classList.contains('.testimonial__arrowR');
 
-            let x = sliders.style.transform || '0';
-            x = x.replace('translate(', "");
-            x = Math.abs(parseInt(x));
+//             let x = sliders.style.transform || '0';
+//             x = x.replace('translate(', "");
+//             x = Math.abs(parseInt(x));
 
-            if (buf){
-                if (x < (slides.length * 6) - 6){
-                    x += 6;
-                } else{
-                    x = 0;
-                }
-            } else{
-                if (x > 0){
-                    x -= 24;
-                } else{
-                    x = (slides.length * 6) - 6;
-                }
-            }
+//             if (buf){
+//                 if (x < (slides.length * 6) - 6){
+//                     x += 6;
+//                 } else{
+//                     x = 0;
+//                 }
+//             } else{
+//                 if (x > 0){
+//                     x -= 24;
+//                 } else{
+//                     x = (slides.length * 6) - 6;
+//                 }
+//             }
 
-            sliders.style.transform = `translate(-${x}%)`;
-        }
+//             sliders.style.transform = `translate(-${x}%)`;
+//         }
 
-        buttons.forEach(button => {
-            button.addEventListener('click', switchSlide);
-        });
-    }
+//         buttons.forEach(button => {
+//             button.addEventListener('click', switchSlide);
+//         });
+//     }
 
-    slidersContainer.forEach(slide => sliderHandler(slide));
-}
+//     slidersContainer.forEach(slide => sliderHandler(slide));
+// }
 
-slider('.testimonial');
-
+// slider('.testimonial');
 
 
 // const popup = selector => {
@@ -188,15 +187,13 @@ slider('.testimonial');
 // }
 
 
+let butClick = document.getElementById('master__button');
+    
+butClick.addEventListener('click', () => {
+    let blockShow = document.querySelectorAll('.master__photos-2');
+    blockShow.classList.toggle('master__hidden');
+});
 
-// let butClick = document.getElementById('master__button');
-// butClick.addEventListener('click', toggleBlock);
-// let blockShow = document.querySelector('.master__photos-2');
-
-// function toggleBlock() {
-//     let blockShow = document.querySelectorAll('.master__photos-2');
-//     blockShow.classList.toggle('master__hidden');
-// }
 
 // if (blockShow.classList.contains('master__hidden')) {
 //     butClick.value = 'See all works';
@@ -204,13 +201,4 @@ slider('.testimonial');
 //     butClick.value = 'Close';
 // }
 
-// document.addEventListener('DOMContentLoaded', hiddenCloseclick());
-//   document.getElementById('master__button').addEventListener('click', hiddenCloseclick);
-// 	function hiddenCloseclick() {
-// 	let x = document.querySelector('master__photos-2');
-//       if (x.style.display == 'none'){
-// 	  x.style.display = 'block';
-// 	  } else {
-// 	    x.style.display = 'none'}
-//     };
 
