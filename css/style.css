@@ -41,7 +41,7 @@ ul{
     transition: .3s linear;
 }
 
-.button:hover{
+.button:not(.master__button):hover{
     background: #f79678;
 }
 
@@ -695,6 +695,11 @@ form input::placeholder{
     max-width: 258px;
     padding-left: 35px;
     background: url(../images/refresh-cw.png) no-repeat 51px center #FF6E40;
+    transition: .3s linear;
+}
+
+.master__button:hover{
+    background: url(../images/refresh-cw.png) no-repeat 51px center #f79678;
 }
 
 .popup {
@@ -748,4 +753,6 @@ form input::placeholder{
 .master__hidden{
     display: none;
 }
+
+
 
