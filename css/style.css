@@ -702,7 +702,7 @@ form input::placeholder{
     background: url(../images/refresh-cw.png) no-repeat 51px center #f79678;
 }
 
-.popup {
+.popup{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -715,8 +715,8 @@ form input::placeholder{
 }
 
 .popup img{
-    width: 50%;
     margin: 0 auto;
+    width: 80%;
 }
 
 .popup__modal {
@@ -726,7 +726,7 @@ form input::placeholder{
     box-sizing: border-box;
     border-radius: 10px;
     position: relative;
-    max-height: 60%;
+    max-height: 90%;
 }
 
 .popup__close {
