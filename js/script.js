@@ -127,7 +127,7 @@ const popup = selector => {
         elem.addEventListener('click', popUpHandler);
     });
 }
-popup('a');
+popup('.about__img, .master');
 
 
 const orderForm = selector => {

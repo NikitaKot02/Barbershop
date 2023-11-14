@@ -142,17 +142,17 @@
         position: fixed;
         flex-direction: column;
         align-items: center;
-        top: 0;
-        left: -100%;
-        width: 50%;
+        gap: 50px;
+        top: -100%;
+        right: 0;
+        width: 100%;
         height: 100%;
-        padding: 20px 15px;
         background-color: black;
-        transition: .6s all;
+        transition: .5s;
     }
 
     .nav__active{
-        left: 0;
+        top: 0;
     }
 
     .nav__item{
@@ -168,8 +168,8 @@
     .burger__menu{
         display: block;
         position: absolute;
-        right: 125px;
-        top: 65px;
+        right: 0;
+        top: 25px;
         transform: translateY(-50%);
         width: 25px;
         height: 15px;
@@ -181,7 +181,7 @@
         width: 100%;
         background-color: #fff;
         margin-bottom: 2px;
-        transition: .5s all;
+        transition: .5s;
     }
 
     .burger__active span{
@@ -221,6 +221,10 @@
 
     .about__img:last-child {
         margin-top: 0;
+    }
+
+    .testimonial{
+        display: none;
     }
 
     .contacts__panel {
@@ -431,10 +435,6 @@
         font-size: 10px;
     }
 
-    .nav {
-        width: 30%;
-    }
-
     .button a {
         font-size: 16px;
     }
@@ -462,14 +462,6 @@
         line-height: 130%;
     }
 
-    .nav {
-        width: 15%;
-    }
-
-    .burger__menu{
-        right: 165px;
-    }
-
     .header__contacts{
         flex-direction: column;
         gap: 10px;
@@ -478,6 +470,15 @@
     .header__address, .header__phone{
         text-align: center;
         margin: 0;
+    }
+
+    .nav{
+        align-items: start;
+    }
+
+    .nav__item{
+        margin-left: 40px;
+
     }
 
     .promo{
@@ -600,15 +601,6 @@
         line-height: 130%;
     }
 
-    .nav {
-        width: 15%;
-    }
-
-    .burger__menu{
-        top: 90px;
-        right: 165px;
-    }
-
     .promo__head{
         font-size: 32px;
     }
@@ -681,15 +673,6 @@
         max-width: 195px;
         font-size: 14px;
         line-height: 130%;
-    }
-
-    .nav {
-        width: 10%;
-    }
-
-    .burger__menu{
-        top: 90px;
-        right: 145px;
     }
 
     .about__img img{
