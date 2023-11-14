@@ -5,15 +5,18 @@ const burger = selector => {
     const menu = document.querySelector('.nav'),
         menuItem = document.querySelectorAll('.nav_item'),
         burgerMenu = document.querySelector('.burger__menu');
+        
+    const body = document.body;
 
     burgerMenu.addEventListener('click', () => {
         burgerMenu.classList.toggle('burger__active');
         menu.classList.toggle('nav__active');
+        body.classList.toggle('hid');
     });
 
     menuItem.forEach(item => {
         item.addEventListener('click', () => {
-            hamburger.classList.toggle('burger__active');
+            burgerMenu.classList.toggle('burger__active');
             menu.classList.toggle('nav__active');
         });
     });

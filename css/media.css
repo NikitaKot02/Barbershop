@@ -161,6 +161,10 @@
         margin: 10px;
     }
 
+    .nav__item:first-child{
+        margin-top: 50px;
+    }
+
     .nav__link {
         font-size: 20px
     }
